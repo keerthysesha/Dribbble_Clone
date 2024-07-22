@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #3c3939;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    margin: 0;
+    font-family: 'Brush Script MT', cursive;
+    color: #ffffff;
+    font-size: xxx-large;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c7bebe;
+}
+
+nav li::before {
+    content: "•";
+    font-size: 20px; /* Adjust size as needed */
+    color: #333333; /* Adjust color as needed */
+    font-weight: bold; /* Make the dot bold */
+    position: absolute;
+    left: -25px; /* Position the dot to the left of the list item */
+    top: 0;
+}
+
+nav a {
+    padding-left: 10px; /* Adjust spacing between dot and text */
+}
+
+.auth a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: rgb(212, 198, 198);
+}
+
+.auth .signup {
+    color: rgb(212, 198, 198);
+    border-radius: 4px;
+}
+
+main {
+    text-align: center;
+    padding:20px 0px;
+}
+
+.hero {
+    margin-top: -50px;
+    background-color: rgb(86, 82, 82);
+    padding: 40px;
+}
+
+.hero h3 {
+    margin-left: -300px;
+    color: white;
+}
+
+.hero h4 {
+    margin-top: -38px;
+    margin-left:270px;
+    color:rgb(167, 162, 162);
+}
+
+.hero button {
+    padding: 10px;
+
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.sign {
+    background-color: rgb(237, 18, 146);
+}
+
+.learn-more {
+    background-color: grey;
+}
+
+.auth form {
+    padding: 25px;
+    display: inline-block;
+}
+
+.auth input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.auth button {
+    padding: 10px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.gallery {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Six columns */
+    gap: 40px;
+    padding: 50px 0;
+}
+
+.gallery-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(90% - 1rem);
+    box-shadow: 0 0 10px rgba(140, 135, 135, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.gallery-info {
+    width: 100%;
+    padding: 10px;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-radius: 0 0 5px 5px;
+}
+
+.gallery-info i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.box-content {
+    font-size: 18px;
+    color: #434141;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    clear: both;
+    background-color: #5c5656;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-top: 3px solid #0a0a0a;
+}
+
+
+footer .container {
+    max-width: 1200px; /* Or any other value that fits your layout */
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Sign In and Sign Up Styles */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.auth a:hover{
+    background-color: #f5f5f5;
+    
+}
+
+.auth-form {
+    text-align: left;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666666;
+}
+
+.auth-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.auth-form button.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: grey;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.auth-form button.submit:focus,
+.auth-form button.submit:active {
+    background-color: #ffffff; /* Change background color on focus or click */
+    color: grey; /* Optional: Change text color to match the button */
+    border: 1px solid grey; /* Optional: Add border to match the button */
+}
+
+.auth-form p {
+    text-align: center;
+    color: #666666;
+}
+
+.auth-form p a {
+    color: grey;
+    text-decoration: none;
+}
+
+.auth-form p a:hover {
+    text-decoration: underline;
+    
+}
